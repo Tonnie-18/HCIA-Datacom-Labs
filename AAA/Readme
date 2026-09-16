@@ -1,0 +1,81 @@
+# 🔐 AAA & Telnet Configuration Lab
+
+## 📌 Overview
+
+This lab demonstrates the configuration of **AAA (Authentication, Authorization and Accounting) concepts** on a Huawei router using **Huawei eNSP**.
+
+The objective was to configure local AAA authentication, create an authentication and authorization scheme, create a local user, enable Telnet access, apply AAA authentication to the VTY user interface, and save the resulting configuration.
+
+The lab also includes troubleshooting of command syntax and configuration dependencies encountered during the setup.
+
+---
+
+## 🎯 Objectives
+
+* Configure a router interface with an IPv4 address.
+* Create an AAA authentication scheme.
+* Create an AAA authorization scheme.
+* Create an AAA domain.
+* Associate authentication and authorization schemes with the domain.
+* Create a local AAA user.
+* Configure Telnet access.
+* Apply AAA authentication to VTY lines.
+* Save the router configuration.
+* Practice troubleshooting Huawei VRP command errors.
+
+---
+
+## 🧰 Tools & Technologies
+
+* **Huawei eNSP**
+* **Huawei VRP**
+* **Huawei CLI**
+* **AAA**
+* **Telnet**
+* **IPv4**
+* **VTY**
+* **Local User Authentication**
+
+---
+
+# 🌐 Network Configuration
+
+### R2 Interface
+
+The router interface was configured with:
+
+```text
+Interface: GigabitEthernet0/0/3
+IP Address: 10.0.12.2
+Subnet Mask: 255.255.255.0 (/24)
+```
+
+Configuration:
+
+```text
+[R2]interface GigabitEthernet 0/0/3
+[R2-GigabitEthernet0/0/3]ip address 10.0.12.2 24
+```
+
+---
+
+# 🔧 AAA Configuration
+
+## 1. Create the AAA Domain
+
+The following domain was created:
+
+```text
+aaa
+domain datacom
+```
+
+Huawei VRP confirmed:
+
+```text
+Info: Success to create a new domain.
+```
+
+---
+
+#
