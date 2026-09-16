@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="BC5A4EF4-C7E9-46c6-884A-331B8EC077A0" name="S2" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-92-4C-27" com_port="2001" bootmode="0" cx="416.979675" cy="208.114182" edit_left="443" edit_top="262">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+        <dev id="26D554F3-DB40-4621-8FFE-A0FC996737C5" name="S1" poe="0" model="S5700" settings="" system_mac="4C-1F-CC-A7-48-0E" com_port="2000" bootmode="0" cx="123.723511" cy="208.595779" edit_left="150" edit_top="262">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="GE" count="24" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="26D554F3-DB40-4621-8FFE-A0FC996737C5" destDeviceID="BC5A4EF4-C7E9-46c6-884A-331B8EC077A0">
+            <interfacePair lineName="Copper" srcIndex="9" srcBoundRectIsMoved="1" srcBoundRect_X="193.183762" srcBoundRect_Y="235.000000" srcOffset_X="-24.000000" srcOffset_Y="-27.000000" tarIndex="9" tarBoundRectIsMoved="1" tarBoundRect_X="399.816223" tarBoundRect_Y="235.000000" tarOffset_X="-22.000000" tarOffset_Y="-37.000000" />
+            <interfacePair lineName="Copper" srcIndex="10" srcBoundRectIsMoved="0" srcBoundRect_X="201.183762" srcBoundRect_Y="243.000000" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="10" tarBoundRectIsMoved="1" tarBoundRect_X="407.816223" tarBoundRect_Y="243.000000" tarOffset_X="-35.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="Copper" srcIndex="11" srcBoundRectIsMoved="1" srcBoundRect_X="185.183762" srcBoundRect_Y="227.000000" srcOffset_X="-7.000000" srcOffset_Y="3.000000" tarIndex="11" tarBoundRectIsMoved="1" tarBoundRect_X="391.816223" tarBoundRect_Y="227.000000" tarOffset_X="-18.000000" tarOffset_Y="6.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="110" top="41" right="182" bottom="58" content="LACP Mode" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+    </txttips>
+</topo>
