@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="B94CDB97-BB46-438b-A761-B2C4C0DB1AE3" name="R2" poe="0" model="Router" settings="" system_mac="54-89-98-49-2F-F8" com_port="2001" bootmode="0" cx="240.000000" cy="136.000000" edit_left="267" edit_top="190">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="21DC5E5F-CA71-4ecd-95B5-F8E0CB48937E" name="R3" poe="0" model="Router" settings="" system_mac="54-89-98-A2-3B-62" com_port="2002" bootmode="0" cx="459.000000" cy="346.000000" edit_left="486" edit_top="400">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="ECA58A64-BE41-4d40-8738-A382E3580792" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-C0-61-D7" com_port="2000" bootmode="0" cx="74.000000" cy="381.000000" edit_left="101" edit_top="435">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="B94CDB97-BB46-438b-A761-B2C4C0DB1AE3" destDeviceID="ECA58A64-BE41-4d40-8738-A382E3580792">
+            <interfacePair lineName="Copper" srcIndex="5" srcBoundRectIsMoved="1" srcBoundRect_X="242.777237" srcBoundRect_Y="198.750458" srcOffset_X="-53.000000" srcOffset_Y="-9.000000" tarIndex="5" tarBoundRectIsMoved="1" tarBoundRect_X="125.222763" tarBoundRect_Y="372.249542" tarOffset_X="-50.000000" tarOffset_Y="-14.000000" />
+        </line>
+        <line srcDeviceID="B94CDB97-BB46-438b-A761-B2C4C0DB1AE3" destDeviceID="21DC5E5F-CA71-4ecd-95B5-F8E0CB48937E">
+            <interfacePair lineName="Copper" srcIndex="3" srcBoundRectIsMoved="1" srcBoundRect_X="298.169281" srcBoundRect_Y="192.888351" srcOffset_X="4.000000" srcOffset_Y="-9.000000" tarIndex="3" tarBoundRectIsMoved="1" tarBoundRect_X="454.830719" tarBoundRect_Y="343.111633" tarOffset_X="7.000000" tarOffset_Y="-12.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="82" top="468" right="177" bottom="485" content="DHCP client " fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="92" top="506" right="149" bottom="523" content="Dynamic" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="473" top="438" right="560" bottom="455" content="DHCP client" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="484" top="483" right="533" bottom="500" content="STatic" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="221" top="96" right="308" bottom="113" content="DHCP server" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="90" top="167" right="192" bottom="184" content="10.0.12.2 /24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="338" top="156" right="440" bottom="173" content="10.0.23.2 /24" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="16" top="229" right="231" bottom="246" content="Assigned from interface pool" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+        <txttip left="361" top="196" right="554" bottom="213" content="Assigned form global pool" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-16711872" charset="1" />
+    </txttips>
+</topo>
